@@ -1,0 +1,37 @@
+{
+  "name": "prask",
+  "repository": "github:fabiospampinato/prask",
+  "description": "Lightweight prompting library for terminal apps.",
+  "version": "2.2.0",
+  "type": "module",
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "tsex clean",
+    "compile": "tsex compile",
+    "compile:watch": "tsex compile --watch",
+    "prepublishOnly": "tsex prepare"
+  },
+  "keywords": [
+    "propmpt",
+    "question",
+    "ask",
+    "input",
+    "select"
+  ],
+  "dependencies": {
+    "fast-string-width": "^1.0.5",
+    "function-once": "^3.0.0",
+    "promise-make-naked": "^2.1.1",
+    "tiny-colors": "^2.1.0",
+    "tiny-cursor": "^2.0.0",
+    "tiny-spinner": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.9",
+    "tsex": "^3.0.1",
+    "typescript": "^5.1.6"
+  }
+}
